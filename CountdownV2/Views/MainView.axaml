@@ -1,0 +1,18 @@
+<!-- MainView.axaml -->
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="CountdownV2.Views.MainView"
+             xmlns:viewModels="clr-namespace:CountdownV2.ViewModels"
+             xmlns:controls="clr-namespace:CountdownV2.Controls"
+             x:DataType="viewModels:MainViewModel">
+    <Grid>
+        <controls:ConfettiCanvas Name="DrawingControl" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <TextBox Name="CountdownTextBox" TextWrapping="Wrap"
+                 VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Background="Transparent" Foreground="White"
+                 FontSize="70" IsReadOnly="True" BorderThickness="0"
+                 FontFamily="Segoe UI Black" />
+        <Button Content="Celebrate!" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                Margin="0,0,0,60" Click="OnConfettiButtonClick" Padding="10"/>
+    </Grid>
+</UserControl>

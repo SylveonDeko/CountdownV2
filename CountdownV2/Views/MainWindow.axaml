@@ -1,0 +1,11 @@
+<Window xmlns="https://github.com/avaloniaui"
+        x:Class="CountdownV2.Views.MainWindow"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New York Countdown"
+        Width="800" Height="450"
+        Background="#252423"
+        MinHeight="100"
+        MinWidth="300"
+        xmlns:views1="clr-namespace:CountdownV2.Views">
+    <views1:MainView/>
+</Window>
